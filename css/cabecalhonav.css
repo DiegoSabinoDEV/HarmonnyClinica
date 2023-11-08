@@ -1,0 +1,79 @@
+/* Importando a fonte Poppins do Google Fonts com vários pesos */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* Reseta várias propriedades CSS para eliminar margens, padding, outlines, etc. 
+Isso é frequentemente usado para assegurar consistência entre navegadores */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4f4c47;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 10px 5px 10px;
+  border: 5px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navlogo,
+img {
+  /* nav-logo: logo da navbar */
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+}
+nav {
+  color: #fdefb6;
+  max-width: 1200px; /* max-width: largura máxima */
+  margin: 0 auto; /* margin: margem */
+  padding: 2rem 1rem; /* padding: preenchimento */
+  display: flex; /* display: exibe um elemento como um elemento de bloco ou em linha */
+  align-items: center; /* align-items: alinhamento dos itens */
+  justify-content: space-between; /* justify-content: alinhamento do conteúdo */
+  gap: 2rem; /* gap: define o espaçamento entre as linhas e colunas de uma grade */
+}
+.nav-links {
+  /* nav-links: links da navbar */
+  list-style: none; /* list-style: define o estilo de imagem de marcador para uma lista  "none" remove essa marca de lista*/
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #fdefb6;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fdefb6;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  box-shadow: 0 0 20px #fdefb6;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #4f4c47;
+  background-color: #fdefb6;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

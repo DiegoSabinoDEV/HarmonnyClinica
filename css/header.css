@@ -1,0 +1,64 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: auto;
+}
+
+.blur {
+  /* blur: desfoque VERIFICAR COM AS MENINAS SE FICA LEGAL ESSE EFEITO*/
+  filter: blur(8px);
+  box-shadow: 0 0 1000px 50px #fdefb6;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem; /* gap: define o espaçamento entre as linhas e colunas de uma grade */
+}
+
+header .content h4 {
+  letter-spacing: 10px;
+  margin-bottom: 1rem; /* margin-bottom: margem inferior */ /* color: cor do texto */
+  font-size: 1rem; /* font-size: tamanho da fonte */
+  font-weight: 600; /* font-weight: peso da fonte */
+}
+
+header .content h1 {
+  margin-bottom: 1rem; /* margin-bottom: margem inferior */
+  font-size: 3rem; /* font-size: tamanho da fonte */
+  font-weight: 700; /* font-weight: peso da fonte */
+  line-height: 4rem; /* line-height: altura da linha */
+}
+
+header .content p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+/* Estilizar dos nomes Roberi e Dani */
+header .content h1 span {
+  -webkit-text-fill-color: transparent; /* -webkit-text-fill-color: define a cor do texto */
+  -webkit-text-stroke: 1px #fdefb6; /* -webkit-text-stroke: define a largura, a cor e o estilo da borda de um texto */
+}
+
+.content {
+  color: #fdefb6;
+  /* h1, h2, h3, h4, h5, h6: define um cabeçalho */
+  font-family: "Poppins", sans-serif;
+  /* font-family: define a fonte do texto */
+  font-weight: 600;
+  /* font-weight: define o peso da fonte */
+}
+
+.image img {
+  max-width: 600px;
+  margin: auto;
+  padding: auto;
+  box-shadow: 0 0 20px #fdefb6;
+  transition: box-shadow 0.3s ease-in-out; /* transition: define a transição entre dois estados de um elemento */
+  border-radius: 15px;
+}

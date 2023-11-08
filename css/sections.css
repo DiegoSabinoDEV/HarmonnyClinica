@@ -1,0 +1,107 @@
+.ceomaster {
+  /* ceomaster: mestre do CEO */
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4f4c47;
+  margin-top: 5rem;
+  border-radius: 15px;
+  letter-spacing: 15px; /* letter-spacing: define o espaçamento entre caracteres de texto */
+  margin-bottom: 5rem;
+  background: linear-gradient(to bottom, #f9e8b4, #fdefb6, #f3e8c3);
+  box-shadow: 0 0 20px 0 rgba(245, 233, 179, 0.8);
+}
+
+.features {
+  /* features: recursos */
+
+  display: grid; /* display: exibe um elemento como um elemento de bloco ou em linha */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* grid-template-columns: define o número de colunas em uma grade e especifica a largura de cada coluna */
+  gap: 2rem; /* gap: define o espaçamento entre as linhas e colunas de uma grade */
+}
+
+.features .card {
+  /* features .card: cartão de recursos */
+  background-color: #fdefb6;
+  color: #4f4c47;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* flex-direction: define a direção dos itens flexíveis dentro de um contêiner flexível */
+  align-items: center; /* align-items: alinha os itens flexíveis verticalmente em um contêiner flexível */
+  justify-content: center; /* justify-content: alinha os itens flexíveis horizontalmente em um contêiner flexível */
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #fdefb6;
+  transition: all 0.3s ease-in-out; /* transition: define a transição entre dois estados de um elemento */
+}
+
+.imgceo {
+  background: linear-gradient(to bottom, #f9e8b4, #fdefb6, #f3e8c3);
+  box-shadow: 0 0 20px 0 rgba(245, 233, 179, 0.8);
+
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* object-fit: especifica como o conteúdo deve ser ajustado a um contêiner */
+}
+
+.features .card:hover {
+  background-color: #4f4c47;
+  color: #fdefb6;
+  /* :hover: define um estilo quando você passa o mouse sobre um elemento */
+  transform: scale(
+    1.05
+  ); /* transform: define uma transformação 2D ou 3D para um elemento */
+
+  border-bottom: none;
+}
+
+.features .card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.features .card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.lista,
+a {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fdefb6;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+a::after {
+  /* ::after: insere algo após o conteúdo de cada elemento no conjunto selecionado */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fdefb6;
+  transition: all 0.3s ease;
+}
+a:hover::after {
+  /* :hover: define um estilo quando você passa o mouse sobre um elemento */
+  width: 100%;
+}
