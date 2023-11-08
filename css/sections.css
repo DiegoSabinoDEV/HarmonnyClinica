@@ -1,4 +1,9 @@
+.container1{
+  background-color: #fdefb6;
+}
+
 .ceomaster {
+
   /* ceomaster: mestre do CEO */
   font-size: 2.25rem;
   font-weight: 600;
@@ -8,11 +13,11 @@
   border-radius: 15px;
   letter-spacing: 15px; /* letter-spacing: define o espaçamento entre caracteres de texto */
   margin-bottom: 5rem;
-  background: linear-gradient(to bottom, #f9e8b4, #fdefb6, #f3e8c3);
-  box-shadow: 0 0 20px 0 rgba(245, 233, 179, 0.8);
+  
 }
 
 .features {
+ 
   /* features: recursos */
 
   display: grid; /* display: exibe um elemento como um elemento de bloco ou em linha */
@@ -25,7 +30,7 @@
 
 .features .card {
   /* features .card: cartão de recursos */
-  background-color: #fdefb6;
+background-color: #fdefb6;
   color: #4f4c47;
   height: auto;
   width: 100%;
@@ -35,14 +40,13 @@
   justify-content: center; /* justify-content: alinha os itens flexíveis horizontalmente em um contêiner flexível */
   text-align: center;
   padding: 2rem;
-  border-radius: 15px;
+  border: none;
   box-shadow: 0 0 20px #fdefb6;
   transition: all 0.3s ease-in-out; /* transition: define a transição entre dois estados de um elemento */
 }
 
 .imgceo {
-  background: linear-gradient(to bottom, #f9e8b4, #fdefb6, #f3e8c3);
-  box-shadow: 0 0 20px 0 rgba(245, 233, 179, 0.8);
+ 
 
   border-radius: 15px;
   width: 100%;
@@ -62,17 +66,27 @@
 }
 
 .features .card h3 {
+ background-color: #fdefb6;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0;
 }
+
+.features .card h2 {
+ 
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
 .features .card h4 {
+  
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
-.lista,
-a {
+.lista  {
+  
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -82,26 +96,3 @@ a {
   margin-bottom: 1rem;
 }
 
-a {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fdefb6;
-  position: relative;
-  padding-bottom: 0.75rem;
-}
-a::after {
-  /* ::after: insere algo após o conteúdo de cada elemento no conjunto selecionado */
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #fdefb6;
-  transition: all 0.3s ease;
-}
-a:hover::after {
-  /* :hover: define um estilo quando você passa o mouse sobre um elemento */
-  width: 100%;
-}
